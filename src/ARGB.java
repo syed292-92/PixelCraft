@@ -24,10 +24,10 @@ public class ARGB {
     }
 }
 
--------------------------------------------------------------------------------
-Below are a few lines of code examples that you may find useful, as well as a few links to the relevant API documentation.
+// -------------------------------------------------------------------------------
+// Below are a few lines of code examples that you may find useful, as well as a few links to the relevant API documentation.
 
--------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
