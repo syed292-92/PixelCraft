@@ -2,10 +2,9 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 public class Invert extends Converter{
-    // 1. Convert Method Overridden
     @Override
     public void convert(String input, String output) throws IOException{
-        // A. Load Image
+        // 1. Load Image
         BufferedImage image = loadImage(input);
 
         // a. Iterate through each y level (bottom to top)
@@ -20,7 +19,7 @@ public class Invert extends Converter{
             }
         }
 
-        // B. Save Image
+        // 2. Save Image
         saveImage(image, output);
     }
 }
