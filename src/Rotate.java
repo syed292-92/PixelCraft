@@ -24,7 +24,7 @@ public class Rotate extends Converter {
             for (int x = 0; x < width; x++) {
                 // current pixel in interation
                 int pixel = image.getRGB(x, y);
-                // Map original coordinates to new rotated coordinates
+                // Maps original coordinates to new rotated coordinates
                 rotatedImage.setRGB(height - 1 - y, x, pixel);
             }
         }

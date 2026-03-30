@@ -1,6 +1,11 @@
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 
+/**
+ * Blurs an inputted image by averaging each pixel's colour
+ * with its surrounding pixels in a 3x3 area.
+ */
+
 public class Grayscale extends Converter {
     /*
      * To run class:
