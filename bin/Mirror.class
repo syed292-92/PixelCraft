@@ -1,0 +1,31 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+
+public class Mirror extends Converter {
+   public Mirror() {
+   }
+
+   public void convert(String var1, String var2) throws IOException {
+      BufferedImage var3 = this.loadImage(var1);
+      this.invertRow(var3, 0);
+      this.saveImage(var3, var2);
+   }
+
+   private void invertRow(BufferedImage var1, int var2) {
+      if (var2 < var1.getHeight()) {
+         this.swap(var1, 0, var1.getWidth() - 1, var2);
+         this.invertRow(var1, var2 + 1);
+      }
+   }
+
+   private void swap(BufferedImage var1, int var2, int var3, int var4) {
+      if (var2 < var3) {
+         int var5 = var1.getRGB(var2, var4);
+         int var6 = var1.getRGB(var3, var4);
+         var1.setRGB(var2, var4, var6);
+         var1.setRGB(var3, var4, var5);
+         this.swap(var1, var2 + 1, var3 - 1, var4);
+      }
+   }
+}
