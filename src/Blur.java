@@ -17,8 +17,8 @@ public class Blur extends Converter {
         BufferedImage blurredImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
         /*
          * loop conditions:
-         * visits every pixel, so 2 outer loops
-         * checks every adjacent pixel, so 2 inner loops
+         * visits every pixel, so 1 outer loops
+         * checks every adjacent pixel, so 1 inner loops
          */
         // going through every pixel in the image, row by row and top to bottom
         for (int y = 0; y < height; y++) {
