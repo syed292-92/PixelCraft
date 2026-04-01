@@ -7,6 +7,8 @@ javac -d bin src/*.java
 java -cp bin PixelCraft Rotate toronto.png
 
 Rotates an inputted image by 90 degrees clockwise.
+Each pixel at position (x, y) is mapped to a new position
+(height - 1 - y, x) in the rotated image.
 */
 public class Rotate extends Converter {
     // main converter method
